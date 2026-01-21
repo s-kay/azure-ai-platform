@@ -27,3 +27,34 @@ Use warm-up endpoints if needed
 ### Lesson
 
 Scale-to-zero saves cost but increases perceived downtime.
+
+
+### Failure: Sudden Traffic Spikes
+
+### Symptoms
+
+Increased 5xx errors
+
+Requests dropped
+
+### Cause
+
+Misconfigured scale rules
+
+Dependency bottlenecks
+
+### Detection
+
+Replica count lags behind request volume
+
+Error rate increases in metrics
+
+### Mitigation
+
+Tune scaling rules conservatively
+
+Protect downstream dependencies with backoff
+
+### Lesson
+
+Auto-scaling reacts, it does not predict.
